@@ -80,6 +80,13 @@ form {
     margin: 20px 0px;
 }
 
+.formCamp img {
+    width: 24px;
+    position: absolute;
+    margin-top: 39px;
+    margin-left: 10px;
+}
+
 .formCamp label {
     color: var(--text-base);
     font-family: 'Poppins', sans-serif;
@@ -91,18 +98,44 @@ form {
     background-color: transparent;
     border: 1px solid #868686;
     margin-top: 5px;
-    padding: 14px;
+    padding: 14px 40px;
     border-radius: 4px;
+    color: white;
 }
 
 .formCamp input:focus {
     outline: 1px solid #ffc632;
 }
 
+#email {
+    background-image: url(./Assets/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 13px;
+}
+
+#email:focus {
+    background-image: url(./Assets/mail-focus.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 13px;
+}
+
+#password {
+    background-image: url(./Assets/lock.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 13px;
+}
+
+#password:focus {
+    background-image: url(./Assets/lock-focus.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 13px;
+}
+
 .formCamp input::placeholder {
     color: #a9afb9;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+
 }
 
 .check_lostPassword {
